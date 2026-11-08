@@ -53,12 +53,18 @@ FFB and clipping: iRacing. Wheel lock: LMU / rFactor 2. Where a sim doesn't send
 
 ---
 
+## Download
+
+**Latest: v2.14** — download `CSD_Nano_Dashes_v2.14.zip` from the [Releases page](../../releases/latest), then follow the install steps below.
+
+---
+
 ## Install
 
 ### Step 1 — Install the dashes
 
 1. Close SimHub completely (also right-click its icon in the system tray by the clock and choose **Exit**, if it's there).
-2. Copy the `Nano V...` folders into SimHub's DashTemplates folder:
+2. Extract the zip, then copy the `Nano V...` folders into SimHub's DashTemplates folder:
    ```
    C:\Program Files (x86)\SimHub\DashTemplates\
    ```
