@@ -13,11 +13,12 @@ Custom SimHub dashboards and LED profiles for the **Conspit CSD Nano 2.99"** dis
 
 ## Contents
 
-- `Dashes/` — SimHub dash files (`.simhubdash`)
+- `Dashes/` — SimHub dashes, packaged as `.zip` files
 - `LED Profiles/` — SimHub LED profiles
 
 ## Install
 
-1. Download the `.simhubdash` file you want from `Dashes/`.
-2. Double-click it (or import it in SimHub → Dash Studio).
-3. Pick it for the CSD Nano screen in Dash Studio.
+1. Download the `.zip` for the dash you want from `Dashes/`.
+2. Extract it.
+3. Copy the extracted dash folder into SimHub's `DashTemplates` folder (default: `C:\Program Files (x86)\SimHub\DashTemplates`).
+4. Restart SimHub, then pick the dash for the CSD Nano screen in Dash Studio.
