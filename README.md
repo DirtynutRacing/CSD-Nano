@@ -4,6 +4,12 @@ Racelogic-style SimHub dashboards for the **Conspit CSD Nano** (2.99", 800 × 26
 
 **By DIRTYNUT** · Free for personal use · Not open source — see [License](#license)
 
+<p align="center">
+  <a href="https://discord.gg/TwagTfRfvJ"><img src="images/discord-banner.png" alt="Join the DIRTYNUT Discord" width="100%"></a>
+</p>
+
+<h2 align="center"><a href="https://discord.gg/TwagTfRfvJ">👉 Join the DIRTYNUT Discord 👈</a></h2>
+
 ---
 
 ## Compatibility
@@ -17,7 +23,7 @@ Racelogic-style SimHub dashboards for the **Conspit CSD Nano** (2.99", 800 × 26
 
 ## What's included
 
-Three styles, each with three dashes — one per Nano — plus an Inputs screen.
+Three styles, each with Lap Time, Delta, Sectors and Fuel dashes — pick one per Nano — plus an Inputs screen.
 
 | Style | Look |
 |---|---|
@@ -30,6 +36,7 @@ Three styles, each with three dashes — one per Nano — plus an Inputs screen.
 | **Lap Time** | Current lap, lap number, best / last / predicted lap |
 | **Delta** | Live delta to your best lap of the session |
 | **Sectors** | Split times like the game, colored vs your best lap: purple = session best, green = faster, yellow = slower, light blue = the sector you're in |
+| **Fuel** | Laps of fuel left (the big number), fuel in the tank, average use per lap, last lap's use, and fuel to add to finish the race |
 | **Inputs** (V4 only) | Brake / throttle bars, 5-second input trace, ABS and TC lights, peak brake %, time to peak brake (vs your previous braking zone), wheel lock, FFB % and FFB clipping % for the lap |
 
 ### Sectors details
@@ -38,6 +45,21 @@ Three styles, each with three dashes — one per Nano — plus an Inputs screen.
 - In iRacing each panel shows that sector's own time; in LMU and other sims they show split times like the game's timing screen.
 - If you have the **Lovely plugin** installed (used by Lovely Dashboard), iRacing sector times come from it; otherwise the dash times the sectors itself.
 - **Spotter view:** when a car is alongside, the Sectors screen switches to CAR LEFT / CAR RIGHT / 3 WIDE, then switches back half a second after the car clears.
+
+### Fuel details
+
+- The big number is how many laps you can still drive on the fuel in the tank.
+- **To finish / Add** shows how much fuel you need to make the end of the race, in lap races and timed races. It shows **ENOUGH** when you can make it.
+- **Low fuel warning:** with 2 laps of fuel or less and not enough to finish, the screen turns red (V3: yellow **BOX BOX**) and the warning flashes. It stays off in the pit lane.
+- Fuel figures come from SimHub's fuel calculator. Use per lap shows `--` until you've driven a full lap.
+
+![Fuel screens](images/fuel-screens.png)
+
+### Flags
+
+When a flag is out, a thin frame around the edge of every screen shows it. Yellow, blue, white, red, orange (meatball) and green flash fast in their colour, black flashes grey so it shows on the black screen, and chequered flips between two chequer patterns. Green only shows for 4 seconds. Everything on the dash sits slightly smaller in the middle so the frame never covers any information.
+
+![Flag frame](images/flag-frame.png)
 
 ### Inputs details
 
@@ -55,7 +77,9 @@ FFB and clipping: iRacing. Wheel lock: LMU / rFactor 2. Where a sim doesn't send
 
 ## Download
 
-**Latest: v2.14** — download `CSD_Nano_Dashes_v2.14.zip` from the [Releases page](../../releases/latest), then follow the install steps below.
+**Latest: v2.15** — download `CSD_Nano_Dashes_v2.15.zip` from the [Releases page](../../releases/latest), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
+
+Questions, bugs or ideas? **[Join the DIRTYNUT Discord](https://discord.gg/TwagTfRfvJ)**
 
 ---
 
@@ -91,7 +115,7 @@ Fonts included (in each `_SHFonts` folder): Barlow Condensed SemiBold, SemiBold 
 ### Step 3 — Start SimHub and assign the dashes
 
 1. Start SimHub. The dashes appear in Dash Studio under **CSD Nano**.
-2. In SimHub's settings for each CSD Nano, pick one dash per screen (Lap Time / Delta / Sectors) from the version you like.
+2. In SimHub's settings for each CSD Nano, pick one dash per screen (Lap Time / Delta / Sectors / Fuel / Inputs) from the version you like.
 
 ---
 
@@ -100,7 +124,7 @@ Fonts included (in each `_SHFonts` folder): Barlow Condensed SemiBold, SemiBold 
 - **Fonts look wrong:** redo Step 2 with **Install for all users**, then fully exit and restart SimHub.
 - **Delta shows `-.---`:** normal until you've completed one timed lap after your out lap, same as in the game.
 - **Spotter never shows:** it uses SimHub's spotter, which needs to be supported by the sim. It stays off while you're stopped (garage, pit box).
-- **Something else looks off:** send a photo of the Nano along with which version and sim you're using.
+- **Something else looks off:** post a photo of the Nano in the [DIRTYNUT Discord](https://discord.gg/TwagTfRfvJ) along with which version and sim you're using.
 
 ---
 
