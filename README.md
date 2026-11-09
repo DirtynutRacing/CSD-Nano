@@ -77,7 +77,7 @@ FFB and clipping: iRacing. Wheel lock: LMU / rFactor 2. Where a sim doesn't send
 
 ## Download
 
-**Latest: v2.15** — download `CSD_Nano_Dashes_v2.15.zip` from the [Releases page](../../releases/latest), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
+**Latest: v2.15** — **[download CSD_Nano_Dashes_v2.15.zip](CSD_Nano_Dashes_v2.15.zip?raw=1)** (older versions are on the [Releases page](../../releases)), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 Questions, bugs or ideas? **[Join the DIRTYNUT Discord](https://discord.gg/TwagTfRfvJ)**
 
