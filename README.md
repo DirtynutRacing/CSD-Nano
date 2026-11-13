@@ -23,7 +23,9 @@ Racelogic-style SimHub dashboards for the **Conspit CSD Nano** (2.99", 800 × 26
 
 ## What's included
 
-Three styles, each with Lap Time, Delta, Sectors and Fuel dashes — pick one per Nano — plus an Inputs screen.
+Three styles, each with Lap Time, Delta, Sectors and Fuel dashes — pick one per Nano — plus Inputs and Tires and Brakes screens.
+
+![Every screen in the pack, each with a flag out](images/all-screens.png)
 
 | Style | Look |
 |---|---|
@@ -37,6 +39,7 @@ Three styles, each with Lap Time, Delta, Sectors and Fuel dashes — pick one pe
 | **Delta** | Live delta to your best lap of the session |
 | **Sectors** | Split times like the game, colored vs your best lap: purple = session best, green = faster, yellow = slower, light blue = the sector you're in |
 | **Fuel** | Laps of fuel left (the big number), fuel in the tank, average use per lap, last lap's use, and fuel to add to finish the race |
+| **Tires and Brakes** (V4 only) | Inner / middle / outer tire temps as colour bars, pressure, wear and brake temp for all four tires, plus brake bias, compound and front / rear brake temps |
 | **Inputs** (V4 only) | Brake / throttle bars, 5-second input trace, ABS and TC lights, peak brake %, time to peak brake (vs your previous braking zone), wheel lock, FFB % and FFB clipping % for the lap |
 
 ### Sectors details
@@ -61,6 +64,16 @@ When a flag is out, a thin frame around the edge of every screen shows it. Yello
 
 ![Flag frame](images/flag-frame.png)
 
+### Tires and Brakes details
+
+- Each tire shows inner / middle / outer temps as coloured bars: blue cold, teal optimal, yellow warm, red hot.
+- Pressure, wear and brake temp for every tire; brake bias, tire compound and front / rear brake temps in the middle.
+- Sims that only send one temp per tire (e.g. ACC) show that temp in the middle bar.
+- iRacing only updates tire temps when you pit; the screen shows a note in iRacing.
+- Temp ranges are in `tiresbrakes.js` if you want to tune them per car. Fahrenheit works if SimHub is set to it.
+
+![Tires and Brakes](images/tires-and-brakes.png)
+
 ### Inputs details
 
 FFB and clipping: iRacing. Wheel lock: LMU / rFactor 2. Where a sim doesn't send that data, those boxes show `--`.
@@ -77,7 +90,7 @@ FFB and clipping: iRacing. Wheel lock: LMU / rFactor 2. Where a sim doesn't send
 
 ## Download
 
-**Latest: v2.15** — **[download CSD_Nano_Dashes_v2.15.zip](CSD_Nano_Dashes_v2.15.zip?raw=1)** (older versions are on the [Releases page](../../releases)), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
+**Latest: v2.16** — **[download CSD_Nano_Dashes_v2.16.zip](CSD_Nano_Dashes_v2.16.zip?raw=1)** (older versions are on the [Releases page](../../releases)), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 Questions, bugs or ideas? **[Join the DIRTYNUT Discord](https://discord.gg/TwagTfRfvJ)**
 
@@ -115,7 +128,7 @@ Fonts included (in each `_SHFonts` folder): Barlow Condensed SemiBold, SemiBold 
 ### Step 3 — Start SimHub and assign the dashes
 
 1. Start SimHub. The dashes appear in Dash Studio under **CSD Nano**.
-2. In SimHub's settings for each CSD Nano, pick one dash per screen (Lap Time / Delta / Sectors / Fuel / Inputs) from the version you like.
+2. In SimHub's settings for each CSD Nano, pick one dash per screen (Lap Time / Delta / Sectors / Fuel / Inputs / Tires and Brakes) from the version you like.
 
 ---
 
