@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.17
+
+- New Lap History screen: your last 10 laps as bars vs your session best (purple best, green close, yellow slower, INV invalid, PIT out / in laps), plus consistency, average and best lap
+- Inputs, Tires and Brakes and Lap History now come in V2 and V3 too, not just V4
+- New All Screens dash for V2, V3 and V4: every screen of that style in one dash, cycle through them with a button (SimHub Controls and events > Dash Studio > Next screen / Previous screen)
+- New idle screen in every dash: your name big, time and date, and a last session card (track, car, sim, best lap, laps, consistency). Set your name in idle_settings.js
+
 ## v2.16
 
 - New Tires and Brakes screen (V4): inner / middle / outer tire temps as colour bars (blue cold, teal optimal, yellow warm, red hot), pressure, wear and brake temp on all four tires

@@ -23,7 +23,7 @@ Racelogic-style SimHub dashboards for the **Conspit CSD Nano** (2.99", 800 × 26
 
 ## What's included
 
-Three styles, each with Lap Time, Delta, Sectors and Fuel dashes — pick one per Nano — plus Inputs and Tires and Brakes screens.
+Three styles, each with **Lap Time, Delta, Sectors, Fuel, Inputs, Tires and Brakes and Lap History** dashes — pick one per Nano — plus an **All Screens** dash per style that cycles through every screen with a button, and an **idle screen** with your name, the time and your last session.
 
 ![Every screen in the pack, each with a flag out](images/all-screens.png)
 
@@ -39,8 +39,25 @@ Three styles, each with Lap Time, Delta, Sectors and Fuel dashes — pick one pe
 | **Delta** | Live delta to your best lap of the session |
 | **Sectors** | Split times like the game, colored vs your best lap: purple = session best, green = faster, yellow = slower, light blue = the sector you're in |
 | **Fuel** | Laps of fuel left (the big number), fuel in the tank, average use per lap, last lap's use, and fuel to add to finish the race |
-| **Tires and Brakes** (V4 only) | Inner / middle / outer tire temps as colour bars, pressure, wear and brake temp for all four tires, plus brake bias, compound and front / rear brake temps |
-| **Inputs** (V4 only) | Brake / throttle bars, 5-second input trace, ABS and TC lights, peak brake %, time to peak brake (vs your previous braking zone), wheel lock, FFB % and FFB clipping % for the lap |
+| **Tires and Brakes** | Inner / middle / outer tire temps as colour bars, pressure, wear and brake temp for all four tires, plus brake bias, compound and front / rear brake temps |
+| **Lap History** | Your last 10 laps as bars vs your session best (purple best, green close, yellow slower, INV invalid, PIT out / in laps), plus consistency, average and best lap |
+| **Inputs** | Brake / throttle bars, 5-second input trace, ABS and TC lights, peak brake %, time to peak brake (vs your previous braking zone), wheel lock, FFB % and FFB clipping % for the lap |
+
+![Inputs, Tires and Brakes and Lap History in V2, V3 and V4](images/extras-all-styles.png)
+
+### All Screens dashes
+
+**Nano V2 / V3 / V4 - All Screens** put every screen of a style into one dash so a single Nano can show them all. Map buttons in SimHub under **Controls and events › Dash Studio**: **Next screen** (and **Previous screen** if you want). Lap history, fuel use and sector timing keep counting while you're on another screen. Your other Nanos running single dashes don't change, because they only have one screen.
+
+### Idle screen
+
+When no game is running, every dash shows your name big, the time and date, and a **Last Session** card: track, car, sim, best lap, laps and consistency from your last session since SimHub started.
+
+- **Your name:** open `idle_settings.js` in a dash's `JavascriptExtensions` folder with Notepad and set `var IDLE_NAME = 'YOURNAME';`. Leave it empty to use the driver name from the game after your first session. Each dash has its own copy, so set it in the dashes on your Nanos.
+- **Clock and date:** in the same file, `IDLE_24H = true` for a 24-hour clock and `IDLE_DATE_US = false` for TUE 17 NOV.
+- Updating the pack with "Replace the files" resets the file, so keep a note of your settings.
+
+![Idle screen](images/idle-screen.png)
 
 ### Sectors details
 
@@ -90,7 +107,7 @@ FFB and clipping: iRacing. Wheel lock: LMU / rFactor 2. Where a sim doesn't send
 
 ## Download
 
-**Latest: v2.16** — **[download CSD_Nano_Dashes_v2.16.zip](CSD_Nano_Dashes_v2.16.zip?raw=1)** (older versions are on the [Releases page](../../releases)), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
+**Latest: v2.17** — **[download CSD_Nano_Dashes_v2.17.zip](CSD_Nano_Dashes_v2.17.zip?raw=1)** (older versions are on the [Releases page](../../releases)), then follow the install steps below. See [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 Questions, bugs or ideas? **[Join the DIRTYNUT Discord](https://discord.gg/TwagTfRfvJ)**
 
@@ -128,7 +145,7 @@ Fonts included (in each `_SHFonts` folder): Barlow Condensed SemiBold, SemiBold 
 ### Step 3 — Start SimHub and assign the dashes
 
 1. Start SimHub. The dashes appear in Dash Studio under **CSD Nano**.
-2. In SimHub's settings for each CSD Nano, pick one dash per screen (Lap Time / Delta / Sectors / Fuel / Inputs / Tires and Brakes) from the version you like.
+2. In SimHub's settings for each CSD Nano, pick one dash per screen (Lap Time / Delta / Sectors / Fuel / Inputs / Tires and Brakes / Lap History / All Screens) from the version you like.
 
 ---
 
